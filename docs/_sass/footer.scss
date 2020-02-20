@@ -1,0 +1,15 @@
+.content {
+  min-height: 100%;
+}
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 3em; 
+   margin-top: -3em;
+}
