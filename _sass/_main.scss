@@ -1,42 +1,54 @@
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/vendor';
+@import 'libs/breakpoints';
+@import 'libs/html-grid';
+@import 'fontawesome-all.min.css';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900');
 
-html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial    , "Noto Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+/*
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
-  @media (min-width: 38em) {
-    font-size: 20px;
-  }
-}
+// Breakpoints.
 
-body {
-  color: #515151;
-  background-color: #fff;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-}
+	@include breakpoints((
+		xlarge:   ( 1281px,  1680px ),
+		large:    ( 981px,   1280px ),
+		medium:   ( 737px,   980px  ),
+		small:    ( 481px,   736px  ),
+		xsmall:   ( 361px,   480px  ),
+		xxsmall:  ( null,    360px  )
+	));
 
-a {
-  color: #6a9fb5;
-  text-decoration: none;
+// Base.
 
-  // `:focus` is linked to `:hover` for basic accessibility
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
+	@import 'base/reset';
+	@import 'base/page';
+	@import 'base/typography';
 
-  strong {
-    color: inherit;
-  }
-}
+// Component.
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
+	@import 'components/row';
+	@import 'components/section';
+	@import 'components/icon';
+	@import 'components/list';
+	@import 'components/actions';
+	@import 'components/icons';
+	@import 'components/form';
+	@import 'components/box';
+	@import 'components/image';
+	@import 'components/table';
+	@import 'components/button';
+	@import 'components/tiles';
+
+// Layout.
+
+	@import 'layout/header';
+	@import 'layout/menu';
+	@import 'layout/main';
+	@import 'layout/footer';
+	@import 'layout/wrapper';
