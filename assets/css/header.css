@@ -243,7 +243,20 @@ body {
 }
 
 @media screen and (max-width: 980px) {
+	#header .links {
+		display: none;
+	}
+
 	#header {
+		height: 2.75em;
+		line-height: 2.75em;
+	}
+
+	#header h1 {
+		padding: 0 0 0 1em;
+	}
+
+	#header .main .search {
 		display: none;
 	}
 

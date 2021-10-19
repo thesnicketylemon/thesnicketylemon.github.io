@@ -78,7 +78,7 @@
 		line-height: inherit;
 	}
 
-	#footer > ..copyright li:first-child {
+	#footer > .copyright li:first-child {
 		margin-top: 0;
 	}
 }
