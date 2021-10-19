@@ -3,6 +3,7 @@
 	width: 100%;
     margin: 0 auto;
 }
+
 /* Tiles */
 .tiles {
     display: -moz-flex;
@@ -130,139 +131,156 @@
     margin: 0;
 }
 
-            .tiles article > a .content {
-                -moz-transition: max-height 0.5s ease, opacity 0.5s ease;
-                -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
-                -ms-transition: max-height 0.5s ease, opacity 0.5s ease;
-                transition: max-height 0.5s ease, opacity 0.5s ease;
-                width: 100%;
-                max-height: 0;
-                line-height: 1.5;
-                margin-top: 0.35em;
-                opacity: 0;
-            }
+.tiles article > a .content {
+    -moz-transition: max-height 0.5s ease, opacity 0.5s ease;
+    -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
+    -ms-transition: max-height 0.5s ease, opacity 0.5s ease;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    width: 100%;
+    max-height: 0;
+    line-height: 1.5;
+    margin-top: 0.35em;
+    opacity: 0;
+}
 
-                .tiles article > a .content > :last-child {
-                    margin-bottom: 0;
-                }
+.tiles article > a .content > :last-child {
+    margin-bottom: 0;
+}
 
-        .tiles article.style1 > .image:before {
-            background-color: #f2849e;
-        }
+.tiles article.style1 > .image:before {
+    background-color: #f2849e;
+}
 
-        .tiles article.style2 > .image:before {
-            background-color: #7ecaf6;
-        }
+.tiles article.style2 > .image:before {
+    background-color: #7ecaf6;
+}
 
-        .tiles article.style3 > .image:before {
-            background-color: #7bd0c1;
-        }
+.tiles article.style3 > .image:before {
+    background-color: #7bd0c1;
+}
 
-        .tiles article.style4 > .image:before {
-            background-color: #c75b9b;
-        }
+.tiles article.style4 > .image:before {
+    background-color: #c75b9b;
+}
 
-        .tiles article.style5 > .image:before {
-            background-color: #ae85ca;
-        }
+.tiles article.style5 > .image:before {
+    background-color: #ae85ca;
+}
 
-        .tiles article.style6 > .image:before {
-            background-color: #8499e7;
-        }
+.tiles article.style6 > .image:before {
+    background-color: #8499e7;
+}
 
-        body:not(.is-touch) .tiles article:hover > .image {
-            -moz-transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            transform: scale(1.1);
-        }
+body:not(.is-touch) .tiles article:hover > .image {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
-            body:not(.is-touch) .tiles article:hover > .image:before {
-                background-color: #333333;
-                opacity: 0.35;
-            }
+body:not(.is-touch) .tiles article:hover > .image:before {
+    background-color: #333333;
+    opacity: 0.35;
+}
 
-            body:not(.is-touch) .tiles article:hover > .image:after {
-                opacity: 0;
-            }
+body:not(.is-touch) .tiles article:hover > .image:after {
+    opacity: 0;
+}
 
-        body:not(.is-touch) .tiles article:hover .content {
-            max-height: 15em;
-            opacity: 1;
-        }
-
-    * + .tiles {
-        margin-top: 2em;
-    }
-
-    body.is-preload .tiles article {
-        -moz-transform: scale(0.9);
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9);
-        opacity: 0;
-    }
-
-    body.is-touch .tiles article .content {
+    body:not(.is-touch) .tiles article:hover .content {
         max-height: 15em;
         opacity: 1;
     }
 
-    @media screen and (max-width: 1280px) {
+* + .tiles {
+    margin-top: 2em;
+}
 
-        .tiles {
-            margin: -1.25em 0 0 -1.25em;
-        }
+body.is-preload .tiles article {
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0;
+}
 
-            .tiles article {
-                width: calc(33.33333% - 1.25em);
-                margin: 1.25em 0 0 1.25em;
-            }
+body.is-touch .tiles article .content {
+    max-height: 15em;
+    opacity: 1;
+}
 
+@media screen and (max-width: 1280px) {
+    .tiles {
+        margin: -1.25em 0 0 -1.25em;
     }
 
-    @media screen and (max-width: 980px) {
-
-        .tiles {
-            margin: -2.5em 0 0 -2.5em;
-        }
-
-            .tiles article {
-                width: calc(50% - 2.5em);
-                margin: 2.5em 0 0 2.5em;
-            }
-
+    .tiles article {
+        width: calc(33.33333% - 1.25em);
+        margin: 1.25em 0 0 1.25em;
     }
 
-    @media screen and (max-width: 736px) {
+    #main {
+        max-width: 68em;
+        width: 100%;
+        margin: 0 auto;
+    }            
+}
 
-        .tiles {
-            margin: -1.25em 0 0 -1.25em;
-        }
-
-            .tiles article {
-                width: calc(50% - 1.25em);
-                margin: 1.25em 0 0 1.25em;
-            }
-
-                .tiles article:hover > .image {
-                    -moz-transform: scale(1.0);
-                    -webkit-transform: scale(1.0);
-                    -ms-transform: scale(1.0);
-                    transform: scale(1.0);
-                }
-
+@media screen and (max-width: 980px) {
+    .tiles {
+        margin: -2.5em 0 0 -2.5em;
     }
 
-    @media screen and (max-width: 480px) {
-
-        .tiles {
-            margin: 0;
-        }
-
-            .tiles article {
-                width: 100%;
-                margin: 1.25em 0 0 0;
-            }
-
+    .tiles article {
+        width: calc(50% - 2.5em);
+        margin: 2.5em 0 0 2.5em;
     }
+
+
+    #main {
+        max-width: 68em;
+        width: 100%;
+        margin: 0 auto;
+    }            
+}
+
+@media screen and (max-width: 736px) {
+    .tiles {
+        margin: -1.25em 0 0 -1.25em;
+    }
+
+    .tiles article {
+        width: calc(50% - 1.25em);
+        margin: 1.25em 0 0 1.25em;
+    }
+
+    .tiles article:hover > .image {
+        -moz-transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+
+    #main {
+        max-width: 68em;
+        width: 100%;
+        margin: 0 auto;
+    }            
+}
+
+@media screen and (max-width: 480px) {
+    .tiles {
+        margin: 0;
+    }
+
+    .tiles article {
+        width: 100%;
+        margin: 1.25em 0 0 0;
+    }
+
+    #main {
+        max-width: 68em;
+        width: 100%;
+        margin: 0 auto;
+    }            
+}

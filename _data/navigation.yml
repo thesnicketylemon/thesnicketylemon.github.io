@@ -2,5 +2,9 @@
   link: /
 - name: About Me
   link: /about.html
-- name: Blog
-  link: /blog.html
+- name: Travel
+  link: /travel.html
+- name: Security
+  link: /security.html
+- name: Reading
+  link: /reading.html

@@ -52,14 +52,14 @@ table.alt tbody tr td:first-child {
 	border-left-width: 1px;
 }
 
-			table.alt tbody tr:first-child td {
-				border-top-width: 1px;
-			}
+table.alt tbody tr:first-child td {
+	border-top-width: 1px;
+}
 
-			table.alt thead {
-				border-bottom: 0;
-			}
+table.alt thead {
+	border-bottom: 0;
+}
 
-			table.alt tfoot {
-				border-top: 0;
-			}
+table.alt tfoot {
+	border-top: 0;
+}
