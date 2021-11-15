@@ -16,28 +16,59 @@
 		<link rel="stylesheet" href="assets/css/header.css" />
 		<link rel="stylesheet" href="assets/css/inputs.css" />
 		<link rel="stylesheet" href="assets/css/list.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/posts.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
   <body>
     <header id="header">
       <h1><a href="index.html">The Whistling Teapot</a></h1>
       <nav class="links">
       <ul>
-        <li><a href="#">Tech/Security</a></li>
-        <li><a href="#">Reading</a></li>
-        <li><a href="#">Travel</a></li>
-        <li><a href="#">Musings</a></li>
+        <li><a href="security.html">Tech/Security</a></li>
+        <li><a href="reading.html">Reading</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="musings.html">Musings</a></li>
       </ul>
       </nav>
       <nav class="main">
         <ul><li class="menu"><a href="#menu">Menu</a></li></ul>
       </nav>
     </header>
-    		{{ content }}
-        <footer id="footer">
-          <ul class="copyright">
-            <li>Copyright &copy; 2021 The Whistling Teapot. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-          </ul>
-        </footer>
+    <body class="is-preload">
+      <!-- Menu -->
+      <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="security.html">Tech/Security</a></li>
+          <li><a href="reading.html">Reading</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="musings.html">Musings</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="inner">
+          <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+              <li><a href="https://github.com/deepikavasudevan/" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+              <li><a href="#" class="icon brands style2 fab fa-goodreads"><span class="label">Phone</span></a></li>
+              <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+          </section>
+        </div>
+      </nav>
+      {{ content }}
+      <footer id="footer">
+        <ul class="copyright">
+          <li>Copyright &copy; 2021 The Whistling Teapot. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </footer>
+        
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
   </body>
 </html>
