@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-<body>	
+<body>
 <div id="main">
   {% for post in site.posts %}
-	{% if post.type == "reading" %}
+	{% if post.categories contains "reading" %}
 	<article class="post">
 		<header>
 			<div class="title">

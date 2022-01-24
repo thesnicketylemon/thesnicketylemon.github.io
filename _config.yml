@@ -1,4 +1,6 @@
 sass:
   sass_dir: _sass
-collections:
-  type:
+plugins:
+  - jekyll-paginate
+paginate: 1
+paginate_path: "/reading/page:num/"
