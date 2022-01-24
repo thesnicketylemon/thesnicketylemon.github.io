@@ -1,0 +1,41 @@
+<header id="header">
+    <h1><a href="index.html">The Whistling Teapot</a></h1>
+    <nav class="links">
+        <ul>{% for item in site.data.navigation %}
+            <li>
+                <a href="{{ item.link }}" {% if page.url== item.link %}style="text-decoration: underline;" {% endif %}>
+                    {{ item.name }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            <li class="menu"><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+    <nav id="menu">
+        <h2>Menu</h2>
+        <ul>{% for item in site.data.navigation %}
+            <li>
+                <a href="{{ item.link }}" {% if page.url== item.link %}style="text-decoration: underline;" {% endif %}>
+                    {{ item.name }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="inner">
+            <section>
+                <h2>Follow</h2>
+                <ul class="icons">
+                    <li><a href="https://github.com/deepikavasudevan/" class="icon brands style2 fa-github"><span
+                            class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon brands style2 fab fa-goodreads"><span class="label">Phone</span></a>
+                    </li>
+                    <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+            </section>
+        </div>
+    </nav>
+</header>

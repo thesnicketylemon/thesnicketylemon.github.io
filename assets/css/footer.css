@@ -58,10 +58,26 @@
 @media screen and (max-width: 736px) {
 	#footer {
 		padding: 3em 0 1em 0 ;
+		height: 1em;
+		bottom: 0;
+		width: 100%;
 	}
 
 	#footer > .copyright {
 		margin-top: 3em;
+		width: 100%;
+		padding: 0;
+		list-style: none;
+		font-size: 0.8em;
+		color: rgba(88, 88, 88, 0.5);
+		text-align: center;
+		margin: 0 0 0.1em 0 !important;
+	}
+
+	#footer > .copyright li:first-child {
+		border-left: 0;
+		padding-left: 0;
+		margin-left: 0;
 	}
 }
 
