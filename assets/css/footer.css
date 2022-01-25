@@ -82,6 +82,13 @@
 }
 
 @media screen and (max-width: 480px) {
+    #footer {
+		padding: 3em 0 1em 0 ;
+		height: 1em;
+		bottom: 0;
+		width: 100%;
+	}
+
 	#footer > .copyright {
 		margin-top: 3em;
 	}
