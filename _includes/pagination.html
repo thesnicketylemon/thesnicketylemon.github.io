@@ -1,7 +1,6 @@
 <ul class="actions pagination">
     {% if paginator.previous_page %}
-    <li><a href="" {{ paginator.previous_page_path }} class="disabled button large previous">Previous Page</a></li>
-    <a href="{{ paginator.previous_page_path }}" class="previous">
+    <a href="{{ paginator.previous_page_path }}" class="previous button large">
         Previous
     </a>
     {% endif %}

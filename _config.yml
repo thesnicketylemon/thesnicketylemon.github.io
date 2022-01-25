@@ -1,4 +1,8 @@
 plugins:
-  - jekyll-paginate
-paginate: 1
-paginate_path: "/reading/page:num/"
+  - jekyll-paginate-v2
+  - jekyll-feed
+permalink: /:year/:month/:title.html
+pagination:
+  enabled: true
+  per_page: 1
+  limit: 0

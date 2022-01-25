@@ -1,10 +1,10 @@
 - name: Travel
-  link: /travel.html
+  link: /travel/index.html
 - name: Security
-  link: /security.html
+  link: /security/index.html
 - name: Reading
-  link: /reading.html
+  link: /reading/index.html
 - name: Musings
-  link: /other.html
+  link: /musings/index.html
 - name: About Me
   link: /about.html

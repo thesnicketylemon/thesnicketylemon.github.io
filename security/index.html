@@ -1,10 +1,12 @@
 ---
 layout: default
+pagination:
+  enabled: true
+  category: security
 ---
 <body>	
 <div id="main">
-  {% for post in site.posts %}
-	{% if post.type == "security" %}
+  {% for post in paginator.posts %}
 	<article class="post">
 		<header>
 			<div class="title">
@@ -22,10 +24,7 @@ layout: default
 			</ul>
 		</footer>
 	</article>
-	{% endif %}
   {% endfor %}
 	{% include pagination.html %}
-</div>
-
 </div>
 </body>
