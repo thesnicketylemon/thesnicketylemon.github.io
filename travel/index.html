@@ -2,11 +2,11 @@
 layout: default
 pagination:
   enabled: true
+  category: travel
 ---
 <body>
 <div id="main">
-  {% for post in site.posts %}
-	{% if post.type == "travel" %}
+  {% for post in paginator.posts %}
 	<article class="post">
 		<header>
 			<div class="title">
@@ -24,7 +24,6 @@ pagination:
 			</ul>
 		</footer>
 	</article>
-	{% endif %}
   {% endfor %}
 	{% include pagination.html %}
 </div>
